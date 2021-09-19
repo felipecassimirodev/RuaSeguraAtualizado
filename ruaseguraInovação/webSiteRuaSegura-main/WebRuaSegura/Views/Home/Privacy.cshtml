@@ -1,0 +1,125 @@
+﻿@{ ViewData["Title"] = "Home Page"; }
+@{ Layout = null; }
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Rua segura</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="~/css/MapsGoogle.css">
+
+    <!-- <script src="~/js/MapaDoGoogle.js"></script>-->
+    <script defer src="~/js/mostraOcorrenciat.js"></script>
+    <script defer src="~/js/MapaDoGoogle.js"></script>
+
+
+    <link rel="stylesheet" href="~/css/MenuLateral.css" />
+    <link rel="stylesheet" href="~/css/buscat.css" />
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+
+</head>
+
+
+<body>
+    <!--Registrar a Ocorrencia  -->
+    <div class="container">
+        <input class="txt01"
+               type="text"
+               placeholder=" local" />
+
+        <input class="txt02"
+               type="text"
+               placeholder=" local" />
+
+
+        <input class="txt03"
+               type="text"
+               placeholder=" local" />
+
+        <input class="txt04"
+               type="text"
+               placeholder=" local" />
+
+        <br />
+        <input class="descricao"
+               type="text"
+               placeholder=" Descreva o acontecimento" />
+
+
+    </div>
+
+    <div class="botaoRegistrarOcorrencia">
+        <div>
+
+            <img class="imAcidente" src="/imagens/ic_acidente.png" />
+        </div>
+        <a class="Botao01" href="#">Registrar Ocorrência</a>
+
+    </div>
+
+
+    <!--buscar endereço -->
+    <div>
+        <input id="origin-input"
+               class="controls"
+               type="text"
+               placeholder="Origem" />
+
+        <input id="destination-input"
+               class="controls"
+               type="text"
+               placeholder="Destino" />
+
+        <div id="mode-selector" class="controls">
+            <input type="radio"
+                   name="type"
+                   id="changemode-walking"
+                   checked="checked" />
+            <label for="changemode-walking">Walking</label>
+            <label for="changemode-walking">Walking</label>
+
+            <input type="radio" name="type" id="changemode-transit" />
+            <label for="changemode-transit">Transit</label>
+
+            <input type="radio" name="type" id="changemode-driving" />
+
+        </div>
+    </div>
+
+
+
+    <!--Mostra o mapa-->
+    <div id="map"></div>
+
+    <!--Menu lateral-->
+    <input type="checkbox" id="chec">
+    <div class="menu">
+        <label for="chec">
+            <img src="/imagens/menu_icon.png">
+        </label>
+        <nav>
+            <img class="FotoMenu" src="/imagens/Logoconta.png" />
+            <ul>
+                <li><a class="af" href="#">Meu perfil</a></li>
+                <li><a class="af" href="#">Historico de rotas</a></li>
+                <li><a class="af" href="#">Meus registros</a></li>
+                <li><a class="af" href="#">Ajuda</a></li>
+                <li><a class="af" href="#">Configurações</a></li>
+                <li><a class="af" href="#">Sobre</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--Função do mapa -->
+    <script>
+       
+
+    </script>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHODAfV3O8S_r29sUcG11EVs9PAwzZ7DA&libraries=places&callback=initMap&channel=GMPSB_addressselection_v1_cABC" async defer></script>
+</body>
+
+</html>

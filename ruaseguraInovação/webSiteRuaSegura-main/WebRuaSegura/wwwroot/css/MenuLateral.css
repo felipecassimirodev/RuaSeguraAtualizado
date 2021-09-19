@@ -1,0 +1,109 @@
+﻿body, html {
+    height: 100%;
+}
+
+
+.menu {
+    z-index: 100;
+    position: absolute;
+    top: 50px;
+   
+}
+
+body {
+    font-family: Arial;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 40px
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"]:checked ~ .menu{
+    
+    transform:translateX(200px);
+}
+
+
+ul {
+   
+    top:160px;
+    position:absolute;
+    width:100%;
+   left:-40px;
+
+}
+.af {
+    display: block;
+    padding: 25px 30px;
+    color: blue;
+    text-decoration: none;
+
+}
+
+    a:hover {
+        background-color: cornflowerblue;
+        color: black;
+    }
+
+label {
+    
+    padding: 15px;
+    position: absolute;
+    z-index: 100;
+    top: -60px;
+    z-index:1;
+}
+nav{
+    z-index: 100;
+    position: absolute;
+    top: -50px;
+    background-color: cornflowerblue;
+    width: 200px;
+    left: -200px;
+    height:600px ;   
+}
+.botaoRegistrarOcorrencia {
+    background-color: darkorange;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    right: 20px;
+    bottom: 10vh;
+    left: 500px;
+    z-index: 100;
+    width: 550px;
+    border-radius: 15px;
+    
+   
+}
+.Botao01 {
+    display: inline-block;
+    padding: 20px 200px;
+    color: Brown;
+    text-decoration: none;
+    font-size: 20px;
+}
+.FotoMenu {
+    position: absolute;
+    bottom: 450px;
+    width: 120px;
+    left:35px;
+}
+.imAcidente {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    right: 10px;
+    bottom: -35px;
+    left: -70px;
+    z-index: 100;
+    width: 160px;
+   
+}
